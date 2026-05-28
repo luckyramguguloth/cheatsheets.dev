@@ -14,11 +14,11 @@
 
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/yourusername/cheatsheets.dev?style=for-the-badge&logo=github&color=FFD700)](https://github.com/yourusername/cheatsheets.dev/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/yourusername/cheatsheets.dev?style=for-the-badge&logo=github&color=4CAF50)](https://github.com/yourusername/cheatsheets.dev/graphs/contributors)
-[![Cheatsheets](https://img.shields.io/badge/cheatsheets-100%2B-blue?style=for-the-badge&logo=bookstack)](https://github.com/yourusername/cheatsheets.dev)
+[![Stars](https://img.shields.io/github/stars/luckyramguguloth/cheatsheets.dev?style=for-the-badge&logo=github&color=FFD700)](https://github.com/luckyramguguloth/cheatsheets.dev/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/luckyramguguloth/cheatsheets.dev?style=for-the-badge&logo=github&color=4CAF50)](https://github.com/luckyramguguloth/cheatsheets.dev/graphs/contributors)
+[![Cheatsheets](https://img.shields.io/badge/cheatsheets-100%2B-blue?style=for-the-badge&logo=bookstack)](https://github.com/luckyramguguloth/cheatsheets.dev)
 [![License](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-green?style=for-the-badge)](../../LICENSE)
-[![Offline](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-100%25%20%E7%A6%BB%E7%BA%BF-orange?style=for-the-badge&logo=wifi)](https://github.com/yourusername/cheatsheets.dev)
+[![Offline](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-100%25%20%E7%A6%BB%E7%BA%BF-orange?style=for-the-badge&logo=wifi)](https://github.com/luckyramguguloth/cheatsheets.dev)
 
 </div>
 
@@ -138,7 +138,7 @@ $ ./search.sh "docker remove"
 
 ## 📜 许可协议
 
-MIT © 2026 [cheatsheets.dev 贡献者](https://github.com/yourusername/cheatsheets.dev/graphs/contributors)
+MIT © 2026 [cheatsheets.dev 贡献者](https://github.com/luckyramguguloth/cheatsheets.dev/graphs/contributors)
 
 有关完整条款，请参阅 [LICENSE](../../LICENSE)。
 
