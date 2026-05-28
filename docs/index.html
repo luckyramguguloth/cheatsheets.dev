@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ── SEO ── -->
+  <title>cheatsheets.dev — One repo. Every cheatsheet. Offline forever.</title>
+  <meta name="description" content="50+ free, open-source developer cheatsheets covering Git, Docker, Kubernetes, Bash, Vim, SQL, Python, Rust, and more. Works 100% offline." />
+  <meta name="keywords" content="cheatsheets, developer cheatsheet, git cheatsheet, docker cheatsheet, bash cheatsheet, kubernetes cheatsheet, vim cheatsheet, programming reference, offline cheatsheet" />
+  <meta name="author" content="cheatsheets.dev contributors" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cheatsheets.dev/" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cheatsheets.dev/" />
+  <meta property="og:title" content="cheatsheets.dev — One repo. Every cheatsheet. Offline forever." />
+  <meta property="og:description" content="50+ free, open-source developer cheatsheets. Works 100% offline. MIT licensed." />
+  <meta property="og:image" content="https://cheatsheets.dev/og-image.png" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="cheatsheets.dev — One repo. Every cheatsheet. Offline forever." />
+  <meta name="twitter:description" content="50+ free, open-source developer cheatsheets. Works 100% offline." />
+  <meta name="twitter:image" content="https://cheatsheets.dev/og-image.png" />
+
+  <!-- ── Favicon (inline SVG as data URI) ── -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+
+  <!-- ── Fonts via Google Fonts (fallback to system) ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+
+  <!-- ── Styles ── -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ── Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "cheatsheets.dev",
+    "url": "https://cheatsheets.dev/",
+    "description": "One repo. Every cheatsheet. Offline forever.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://cheatsheets.dev/#q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ════════════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="nav-brand" href="/" aria-label="cheatsheets.dev home">
+        <span class="brand-emoji" aria-hidden="true">📚</span>
+        <span>cheatsheets<span class="brand-dot">.</span>dev</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#cheatsheets" class="nav-link">Browse</a>
+        <a href="https://github.com/cheatsheets-dev/cheatsheets" class="nav-link" target="_blank" rel="noopener">Contribute</a>
+        <a href="../CONTRIBUTING.md" class="nav-link">Docs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light/dark mode"
+          title="Toggle theme"
+        >
+          <span id="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+
+        <a
+          href="https://github.com/cheatsheets-dev/cheatsheets"
+          class="btn-github"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View on GitHub"
+        >
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════
+       MAIN
+  ════════════════════════════════════════════════ -->
+  <main id="main">
+
+    <!-- ── Hero ── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" aria-hidden="true">
+            <span>✨</span>
+            <span>Open Source · MIT License · v1.0</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            <span class="emoji" aria-hidden="true">📚</span>
+            <span class="gradient-text">cheatsheets.dev</span>
+          </h1>
+
+          <p class="hero-tagline">
+            One repo. <strong>Every cheatsheet.</strong> Offline forever.<br />
+            No sign-ups. No ads. No nonsense. Just references.
+          </p>
+
+          <!-- Stats Bar -->
+          <div class="stats-bar" role="list" aria-label="Site statistics">
+            <div class="stat-item" role="listitem">
+              <span class="stat-value" id="stat-total">50</span>
+              <span class="stat-label">Cheatsheets</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Offline</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-value">MIT</span>
+              <span class="stat-label">License</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Search ── -->
+    <section class="search-section" aria-label="Search cheatsheets">
+      <div class="container">
+        <div class="search-wrapper">
+          <!-- Icon LEFT of input (inside wrapper) -->
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            type="search"
+            id="search-input"
+            class="search-input"
+            placeholder="Search cheatsheets… (press / to focus)"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            aria-label="Search cheatsheets"
+            aria-controls="cards-grid"
+            aria-autocomplete="list"
+          />
+          <button
+            class="search-clear"
+            id="search-clear"
+            aria-label="Clear search"
+            type="button"
+            title="Clear"
+          >✕</button>
+        </div>
+        <p class="search-count" id="search-count" aria-live="polite" aria-atomic="true"></p>
+      </div>
+    </section>
+
+    <!-- ── Category Tabs ── -->
+    <div class="container" id="cheatsheets">
+      <nav class="category-tabs" aria-label="Filter by category" role="tablist">
+        <button class="tab-btn active" data-category="all" role="tab" aria-selected="true" aria-controls="cards-grid">
+          <span>🗂️</span> All <span class="tab-count">50</span>
+        </button>
+        <button class="tab-btn" data-category="dev" role="tab" aria-selected="false" aria-controls="cards-grid">
+          <span>🖥️</span> Dev <span class="tab-count">30</span>
+        </button>
+        <button class="tab-btn" data-category="devops" role="tab" aria-selected="false" aria-controls="cards-grid">
+          <span>🚀</span> DevOps <span class="tab-count">10</span>
+        </button>
+        <button class="tab-btn" data-category="gaming" role="tab" aria-selected="false" aria-controls="cards-grid">
+          <span>🎮</span> Gaming <span class="tab-count">5</span>
+        </button>
+        <button class="tab-btn" data-category="hardware" role="tab" aria-selected="false" aria-controls="cards-grid">
+          <span>🔧</span> Hardware <span class="tab-count">5</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- ── Cards Grid ── -->
+    <section class="cards-section" aria-label="Cheatsheet collection">
+      <div class="container">
+        <div class="cards-grid" id="cards-grid" role="list">
+
+          <!-- ── DEV (30) ── -->
+
+          <a class="card" href="../dev/git.md" role="listitem"
+             data-name="Git" data-desc="Version control commands and workflows" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🌿</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Git</h2>
+            <p class="card-desc">Version control commands and workflows</p>
+            <div class="card-footer">
+              <span>git.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/bash.md" role="listitem"
+             data-name="Bash" data-desc="Shell scripting and command-line reference" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐚</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Bash</h2>
+            <p class="card-desc">Shell scripting and command-line reference</p>
+            <div class="card-footer">
+              <span>bash.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/regex.md" role="listitem"
+             data-name="Regex" data-desc="Regular expressions syntax and patterns" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔍</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Regex</h2>
+            <p class="card-desc">Regular expressions syntax and patterns</p>
+            <div class="card-footer">
+              <span>regex.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/vim.md" role="listitem"
+             data-name="Vim" data-desc="Modal text editor keybindings and commands" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📝</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Vim</h2>
+            <p class="card-desc">Modal text editor keybindings and commands</p>
+            <div class="card-footer">
+              <span>vim.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/tmux.md" role="listitem"
+             data-name="Tmux" data-desc="Terminal multiplexer sessions and panes" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🖥️</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Tmux</h2>
+            <p class="card-desc">Terminal multiplexer sessions and panes</p>
+            <div class="card-footer">
+              <span>tmux.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/docker.md" role="listitem"
+             data-name="Docker" data-desc="Container lifecycle, images, and networking" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐳</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Docker</h2>
+            <p class="card-desc">Container lifecycle, images, and networking</p>
+            <div class="card-footer">
+              <span>docker.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/docker-compose.md" role="listitem"
+             data-name="Docker Compose" data-desc="Multi-container orchestration with YAML" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐙</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Docker Compose</h2>
+            <p class="card-desc">Multi-container orchestration with YAML</p>
+            <div class="card-footer">
+              <span>docker-compose.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/sql.md" role="listitem"
+             data-name="SQL" data-desc="Structured query language fundamentals" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🗄️</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">SQL</h2>
+            <p class="card-desc">Structured query language fundamentals</p>
+            <div class="card-footer">
+              <span>sql.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/postgresql.md" role="listitem"
+             data-name="PostgreSQL" data-desc="Postgres-specific commands and extensions" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐘</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">PostgreSQL</h2>
+            <p class="card-desc">Postgres-specific commands and extensions</p>
+            <div class="card-footer">
+              <span>postgresql.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/mysql.md" role="listitem"
+             data-name="MySQL" data-desc="MySQL database administration and queries" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐬</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">MySQL</h2>
+            <p class="card-desc">MySQL database administration and queries</p>
+            <div class="card-footer">
+              <span>mysql.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/python.md" role="listitem"
+             data-name="Python" data-desc="Python syntax, builtins, and standard library" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐍</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Python</h2>
+            <p class="card-desc">Python syntax, builtins, and standard library</p>
+            <div class="card-footer">
+              <span>python.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/javascript.md" role="listitem"
+             data-name="JavaScript" data-desc="ES6+ syntax, DOM, async, and APIs" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">⚡</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">JavaScript</h2>
+            <p class="card-desc">ES6+ syntax, DOM, async, and APIs</p>
+            <div class="card-footer">
+              <span>javascript.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/typescript.md" role="listitem"
+             data-name="TypeScript" data-desc="Type annotations, generics, and utility types" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔷</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">TypeScript</h2>
+            <p class="card-desc">Type annotations, generics, and utility types</p>
+            <div class="card-footer">
+              <span>typescript.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/go.md" role="listitem"
+             data-name="Go" data-desc="Go language syntax, goroutines, and stdlib" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐹</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Go</h2>
+            <p class="card-desc">Go language syntax, goroutines, and stdlib</p>
+            <div class="card-footer">
+              <span>go.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/rust.md" role="listitem"
+             data-name="Rust" data-desc="Ownership, borrowing, traits, and cargo" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🦀</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Rust</h2>
+            <p class="card-desc">Ownership, borrowing, traits, and cargo</p>
+            <div class="card-footer">
+              <span>rust.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/cpp.md" role="listitem"
+             data-name="C++" data-desc="Modern C++ syntax, STL, and memory management" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">⚙️</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">C++</h2>
+            <p class="card-desc">Modern C++ syntax, STL, and memory management</p>
+            <div class="card-footer">
+              <span>cpp.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/css.md" role="listitem"
+             data-name="CSS" data-desc="Selectors, flexbox, grid, and animations" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🎨</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">CSS</h2>
+            <p class="card-desc">Selectors, flexbox, grid, and animations</p>
+            <div class="card-footer">
+              <span>css.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/html.md" role="listitem"
+             data-name="HTML" data-desc="Semantic markup, forms, and accessibility" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🌐</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">HTML</h2>
+            <p class="card-desc">Semantic markup, forms, and accessibility</p>
+            <div class="card-footer">
+              <span>html.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/http-status-codes.md" role="listitem"
+             data-name="HTTP Status Codes" data-desc="All HTTP response codes explained" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📡</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">HTTP Status Codes</h2>
+            <p class="card-desc">All HTTP response codes explained</p>
+            <div class="card-footer">
+              <span>http-status-codes.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/curl.md" role="listitem"
+             data-name="cURL" data-desc="HTTP requests, auth, and data transfer" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🌀</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">cURL</h2>
+            <p class="card-desc">HTTP requests, auth, and data transfer</p>
+            <div class="card-footer">
+              <span>curl.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/ssh.md" role="listitem"
+             data-name="SSH" data-desc="Secure shell config, keys, and tunneling" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔐</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">SSH</h2>
+            <p class="card-desc">Secure shell config, keys, and tunneling</p>
+            <div class="card-footer">
+              <span>ssh.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/nginx.md" role="listitem"
+             data-name="Nginx" data-desc="Web server config, proxying, and SSL" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🟢</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Nginx</h2>
+            <p class="card-desc">Web server config, proxying, and SSL</p>
+            <div class="card-footer">
+              <span>nginx.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/linux-commands.md" role="listitem"
+             data-name="Linux Commands" data-desc="Essential Linux CLI tools and utilities" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐧</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Linux Commands</h2>
+            <p class="card-desc">Essential Linux CLI tools and utilities</p>
+            <div class="card-footer">
+              <span>linux-commands.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/file-permissions.md" role="listitem"
+             data-name="File Permissions" data-desc="Unix chmod, chown, and ACL reference" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔒</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">File Permissions</h2>
+            <p class="card-desc">Unix chmod, chown, and ACL reference</p>
+            <div class="card-footer">
+              <span>file-permissions.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/cron.md" role="listitem"
+             data-name="Cron" data-desc="Crontab syntax and scheduled job patterns" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">⏰</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Cron</h2>
+            <p class="card-desc">Crontab syntax and scheduled job patterns</p>
+            <div class="card-footer">
+              <span>cron.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/environment-variables.md" role="listitem"
+             data-name="Environment Variables" data-desc="Env var management across shells and OSes" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📋</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Environment Variables</h2>
+            <p class="card-desc">Env var management across shells and OSes</p>
+            <div class="card-footer">
+              <span>environment-variables.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/package-managers.md" role="listitem"
+             data-name="Package Managers" data-desc="npm, pip, cargo, brew, apt, and more" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📦</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Package Managers</h2>
+            <p class="card-desc">npm, pip, cargo, brew, apt, and more</p>
+            <div class="card-footer">
+              <span>package-managers.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/markdown.md" role="listitem"
+             data-name="Markdown" data-desc="Markdown syntax with GitHub Flavored extras" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📄</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">Markdown</h2>
+            <p class="card-desc">Markdown syntax with GitHub Flavored extras</p>
+            <div class="card-footer">
+              <span>markdown.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/json.md" role="listitem"
+             data-name="JSON" data-desc="JSON format, jq queries, and schema basics" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🧩</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">JSON</h2>
+            <p class="card-desc">JSON format, jq queries, and schema basics</p>
+            <div class="card-footer">
+              <span>json.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../dev/yaml.md" role="listitem"
+             data-name="YAML" data-desc="YAML syntax, anchors, and multiline strings" data-category="dev">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📑</span>
+              <span class="card-badge dev">Dev</span>
+            </div>
+            <h2 class="card-name">YAML</h2>
+            <p class="card-desc">YAML syntax, anchors, and multiline strings</p>
+            <div class="card-footer">
+              <span>yaml.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <!-- ── DEVOPS (10) ── -->
+
+          <a class="card" href="../devops/kubectl.md" role="listitem"
+             data-name="kubectl" data-desc="Kubernetes CLI for pods, services, and deployments" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">☸️</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">kubectl</h2>
+            <p class="card-desc">Kubernetes CLI for pods, services, and deployments</p>
+            <div class="card-footer">
+              <span>kubectl.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/terraform.md" role="listitem"
+             data-name="Terraform" data-desc="Infrastructure as code with HCL and providers" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🏗️</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">Terraform</h2>
+            <p class="card-desc">Infrastructure as code with HCL and providers</p>
+            <div class="card-footer">
+              <span>terraform.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/github-actions.md" role="listitem"
+             data-name="GitHub Actions" data-desc="CI/CD workflow syntax and job orchestration" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">⚡</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">GitHub Actions</h2>
+            <p class="card-desc">CI/CD workflow syntax and job orchestration</p>
+            <div class="card-footer">
+              <span>github-actions.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/systemd.md" role="listitem"
+             data-name="systemd" data-desc="Service management, units, and journald" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔄</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">systemd</h2>
+            <p class="card-desc">Service management, units, and journald</p>
+            <div class="card-footer">
+              <span>systemd.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/networking.md" role="listitem"
+             data-name="Networking" data-desc="IP, DNS, routing, and diagnostic commands" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🌐</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">Networking</h2>
+            <p class="card-desc">IP, DNS, routing, and diagnostic commands</p>
+            <div class="card-footer">
+              <span>networking.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/iptables.md" role="listitem"
+             data-name="iptables" data-desc="Linux firewall rules and packet filtering" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔥</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">iptables</h2>
+            <p class="card-desc">Linux firewall rules and packet filtering</p>
+            <div class="card-footer">
+              <span>iptables.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/grep-awk-sed.md" role="listitem"
+             data-name="grep / awk / sed" data-desc="Text processing and stream editing tools" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔬</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">grep / awk / sed</h2>
+            <p class="card-desc">Text processing and stream editing tools</p>
+            <div class="card-footer">
+              <span>grep-awk-sed.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/disk-management.md" role="listitem"
+             data-name="Disk Management" data-desc="Partitioning, LVM, filesystems, and mount" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">💾</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">Disk Management</h2>
+            <p class="card-desc">Partitioning, LVM, filesystems, and mount</p>
+            <div class="card-footer">
+              <span>disk-management.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/process-management.md" role="listitem"
+             data-name="Process Management" data-desc="ps, top, kill, nice, and job control" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">⚙️</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">Process Management</h2>
+            <p class="card-desc">ps, top, kill, nice, and job control</p>
+            <div class="card-footer">
+              <span>process-management.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../devops/logs.md" role="listitem"
+             data-name="Logs" data-desc="Log analysis, rotation, and aggregation tools" data-category="devops">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📋</span>
+              <span class="card-badge devops">DevOps</span>
+            </div>
+            <h2 class="card-name">Logs</h2>
+            <p class="card-desc">Log analysis, rotation, and aggregation tools</p>
+            <div class="card-footer">
+              <span>logs.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <!-- ── GAMING (5) ── -->
+
+          <a class="card" href="../gaming/gpu-overclocking.md" role="listitem"
+             data-name="GPU Overclocking" data-desc="Core clock, memory, power limit tuning" data-category="gaming">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🎮</span>
+              <span class="card-badge gaming">Gaming</span>
+            </div>
+            <h2 class="card-name">GPU Overclocking</h2>
+            <p class="card-desc">Core clock, memory, power limit tuning</p>
+            <div class="card-footer">
+              <span>gpu-overclocking.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../gaming/windows-debloat-commands.md" role="listitem"
+             data-name="Windows Debloat" data-desc="Remove bloatware and optimize Windows for gaming" data-category="gaming">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🪟</span>
+              <span class="card-badge gaming">Gaming</span>
+            </div>
+            <h2 class="card-name">Windows Debloat</h2>
+            <p class="card-desc">Remove bloatware and optimize Windows for gaming</p>
+            <div class="card-footer">
+              <span>windows-debloat-commands.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../gaming/steam-launch-options.md" role="listitem"
+             data-name="Steam Launch Options" data-desc="Per-game launch flags and performance options" data-category="gaming">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🚂</span>
+              <span class="card-badge gaming">Gaming</span>
+            </div>
+            <h2 class="card-name">Steam Launch Options</h2>
+            <p class="card-desc">Per-game launch flags and performance options</p>
+            <div class="card-footer">
+              <span>steam-launch-options.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../gaming/game-mode-linux.md" role="listitem"
+             data-name="Linux Game Mode" data-desc="GameMode daemon, Proton, and Steam Deck tips" data-category="gaming">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🐧</span>
+              <span class="card-badge gaming">Gaming</span>
+            </div>
+            <h2 class="card-name">Linux Game Mode</h2>
+            <p class="card-desc">GameMode daemon, Proton, and Steam Deck tips</p>
+            <div class="card-footer">
+              <span>game-mode-linux.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../gaming/fps-troubleshooting.md" role="listitem"
+             data-name="FPS Troubleshooting" data-desc="Diagnose and fix low FPS and stuttering" data-category="gaming">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">📈</span>
+              <span class="card-badge gaming">Gaming</span>
+            </div>
+            <h2 class="card-name">FPS Troubleshooting</h2>
+            <p class="card-desc">Diagnose and fix low FPS and stuttering</p>
+            <div class="card-footer">
+              <span>fps-troubleshooting.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <!-- ── HARDWARE (5) ── -->
+
+          <a class="card" href="../hardware/pc-build-checklist.md" role="listitem"
+             data-name="PC Build Checklist" data-desc="Step-by-step guide for building a PC" data-category="hardware">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🔧</span>
+              <span class="card-badge hardware">Hardware</span>
+            </div>
+            <h2 class="card-name">PC Build Checklist</h2>
+            <p class="card-desc">Step-by-step guide for building a PC</p>
+            <div class="card-footer">
+              <span>pc-build-checklist.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../hardware/ram-xmp-oc.md" role="listitem"
+             data-name="RAM XMP / OC" data-desc="Memory profiles, timings, and overclocking" data-category="hardware">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🧠</span>
+              <span class="card-badge hardware">Hardware</span>
+            </div>
+            <h2 class="card-name">RAM XMP / OC</h2>
+            <p class="card-desc">Memory profiles, timings, and overclocking</p>
+            <div class="card-footer">
+              <span>ram-xmp-oc.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../hardware/storage-setup.md" role="listitem"
+             data-name="Storage Setup" data-desc="SSD, NVMe, RAID config, and benchmarking" data-category="hardware">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">💽</span>
+              <span class="card-badge hardware">Hardware</span>
+            </div>
+            <h2 class="card-name">Storage Setup</h2>
+            <p class="card-desc">SSD, NVMe, RAID config, and benchmarking</p>
+            <div class="card-footer">
+              <span>storage-setup.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../hardware/bios-essentials.md" role="listitem"
+             data-name="BIOS Essentials" data-desc="UEFI settings, secure boot, and POST codes" data-category="hardware">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">⚙️</span>
+              <span class="card-badge hardware">Hardware</span>
+            </div>
+            <h2 class="card-name">BIOS Essentials</h2>
+            <p class="card-desc">UEFI settings, secure boot, and POST codes</p>
+            <div class="card-footer">
+              <span>bios-essentials.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <a class="card" href="../hardware/thermal-paste-guide.md" role="listitem"
+             data-name="Thermal Paste Guide" data-desc="Application methods, brands, and reapply tips" data-category="hardware">
+            <div class="card-header">
+              <span class="card-emoji" aria-hidden="true">🌡️</span>
+              <span class="card-badge hardware">Hardware</span>
+            </div>
+            <h2 class="card-name">Thermal Paste Guide</h2>
+            <p class="card-desc">Application methods, brands, and reapply tips</p>
+            <div class="card-footer">
+              <span>thermal-paste-guide.md</span>
+              <span class="card-link-hint">Open →</span>
+            </div>
+          </a>
+
+          <!-- ── Empty State ── -->
+          <div class="empty-state" id="empty-state" role="status" aria-live="polite">
+            <div class="empty-state-icon" aria-hidden="true">🔍</div>
+            <h3>No cheatsheets found</h3>
+            <p>Try a different search term or select a different category.</p>
+          </div>
+
+        </div><!-- /.cards-grid -->
+      </div><!-- /.container -->
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h3>📚 cheatsheets.dev</h3>
+          <p>
+            A free, open-source collection of developer cheatsheets.
+            Works completely offline. No tracking, no ads, no accounts.
+            Forever free under the MIT license.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/cheatsheets-dev/cheatsheets" target="_blank" rel="noopener">GitHub Repository</a></li>
+            <li><a href="../CONTRIBUTING.md">Contributing Guide</a></li>
+            <li><a href="../README.md">README</a></li>
+            <li><a href="../CHANGELOG.md">Changelog</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-tab-link="dev">🖥️ Development (30)</a></li>
+            <li><a href="#" data-tab-link="devops">🚀 DevOps (10)</a></li>
+            <li><a href="#" data-tab-link="gaming">🎮 Gaming (5)</a></li>
+            <li><a href="#" data-tab-link="hardware">🔧 Hardware (5)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025–2026
+          <a href="https://github.com/cheatsheets-dev/cheatsheets" target="_blank" rel="noopener">cheatsheets.dev</a>
+          contributors. Released under the
+          <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>.
+        </p>
+        <div class="footer-badges">
+          <span class="badge mit">MIT</span>
+          <span class="badge stars">⭐ Open Source</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════ -->
+  <script>
+    /* ── Theme Toggle ── */
+    (function () {
+      const html = document.documentElement;
+      const btn  = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+
+      // Load saved preference or default dark
+      const saved = localStorage.getItem('cs-theme') || 'dark';
+      html.setAttribute('data-theme', saved);
+      icon.textContent = saved === 'dark' ? '☀️' : '🌙';
+
+      btn.addEventListener('click', function () {
+        const current = html.getAttribute('data-theme');
+        const next    = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        icon.textContent = next === 'dark' ? '☀️' : '🌙';
+        localStorage.setItem('cs-theme', next);
+      });
+    })();
+
+    /* ── Footer category tab links ── */
+    document.querySelectorAll('[data-tab-link]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const cat = link.dataset.tabLink;
+        const btn = document.querySelector('.tab-btn[data-category="' + cat + '"]');
+        if (btn) {
+          btn.click();
+          document.getElementById('cheatsheets').scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+  <!-- ════════════════════════════════════════════════
+       CHEATSHEET VIEWER MODAL
+  ════════════════════════════════════════════════ -->
+  <div id="cheatsheet-viewer" class="viewer-modal" aria-hidden="true" role="dialog" aria-labelledby="viewer-title">
+    <div class="viewer-overlay" id="viewer-overlay"></div>
+    <div class="viewer-content-wrapper">
+      <header class="viewer-header">
+        <div class="viewer-meta">
+          <span id="viewer-category" class="viewer-badge">Dev</span>
+          <span id="viewer-filename" class="viewer-filename">git.md</span>
+        </div>
+        <button class="viewer-close" id="viewer-close" aria-label="Close cheatsheet">✕</button>
+      </header>
+      <div class="viewer-body" id="viewer-body">
+        <!-- Rendered cheatsheet content will go here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>
