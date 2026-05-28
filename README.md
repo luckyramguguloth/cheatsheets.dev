@@ -14,11 +14,11 @@
 
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/yourusername/cheatsheets.dev?style=for-the-badge&logo=github&color=FFD700)](https://github.com/yourusername/cheatsheets.dev/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/yourusername/cheatsheets.dev?style=for-the-badge&logo=github&color=4CAF50)](https://github.com/yourusername/cheatsheets.dev/graphs/contributors)
-[![Cheatsheets](https://img.shields.io/badge/cheatsheets-100%2B-blue?style=for-the-badge&logo=bookstack)](https://github.com/yourusername/cheatsheets.dev)
+[![Stars](https://img.shields.io/github/stars/yourusername/cheatsheets.dev?style=for-the-badge&logo=github&color=FFD700)](https://github.com/luckyramguguloth/cheatsheets.dev/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/yourusername/cheatsheets.dev?style=for-the-badge&logo=github&color=4CAF50)](https://github.com/luckyramguguloth/cheatsheets.dev/graphs/contributors)
+[![Cheatsheets](https://img.shields.io/badge/cheatsheets-100%2B-blue?style=for-the-badge&logo=bookstack)](https://github.com/luckyramguguloth/cheatsheets.dev)
 [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
-[![Offline](https://img.shields.io/badge/works-100%25%20offline-orange?style=for-the-badge&logo=wifi)](https://github.com/yourusername/cheatsheets.dev)
+[![Offline](https://img.shields.io/badge/works-100%25%20offline-orange?style=for-the-badge&logo=wifi)](https://github.com/luckyramguguloth/cheatsheets.dev)
 
 </div>
 
@@ -138,7 +138,7 @@ We welcome contributions of all sizes!
 
 ## 📜 License
 
-MIT © 2026 [cheatsheets.dev contributors](https://github.com/yourusername/cheatsheets.dev/graphs/contributors)
+MIT © 2026 [cheatsheets.dev contributors](https://github.com/luckyramguguloth/cheatsheets.dev/graphs/contributors)
 
 See [LICENSE](LICENSE) for full terms.
 
