@@ -9,7 +9,7 @@
 
 | Action | PowerShell Command (Run as Admin) |
 |---|---|
-| Remove all stock bloatware | `Get-AppxPackage -AllUsers | Where-Object {$_.Name -notlike "*store*"} | Remove-AppxPackage` |
+| Remove all stock bloatware | `Get-AppxPackage -AllUsers \| Where-Object {$_.Name -notlike "*store*"} \| Remove-AppxPackage` |
 | Disable Xbox Game Bar | `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\GameDVR" -Name "AppCaptureEnabled" -Value 0` |
 | Enable Game Mode | `Set-ItemProperty -Path "HKCU:\Software\Microsoft\GameBar" -Name "AutoGameModeEnabled" -Value 1` |
 | Disable Cortana | `Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search" -Name "AllowCortana" -Value 0` |

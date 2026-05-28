@@ -18,9 +18,9 @@
 | `find . -name "*.log"` | Find files by name |
 | `grep -r "pattern" .` | Search text recursively |
 | `chmod +x script.sh` | Make file executable |
-| `cat file | sort | uniq` | Sort and deduplicate lines |
+| `cat file \| sort \| uniq` | Sort and deduplicate lines |
 | `tail -f file.log` | Follow file output live |
-| `ps aux | grep nginx` | Find running processes |
+| `ps aux \| grep nginx` | Find running processes |
 | `kill -9 <pid>` | Force kill a process |
 | `df -h` | Disk usage (human readable) |
 | `du -sh *` | Size of items in current dir |

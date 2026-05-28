@@ -35,7 +35,7 @@
 ### Phase 2: Case Preparation & Motherboard Mounting
 - [ ] **Mount I/O Shield:** (Skip if motherboard has a pre-installed integrated I/O shield).
 - [ ] **Motherboard Standoffs:** Ensure standoffs in case align *exactly* with motherboard screw holes. Extra standoffs can cause a short circuit.
-- [ ] **CPU Cooler Mounting:** 
+- [ ] **CPU Cooler Mounting:**
   - Install mounting brackets.
   - Apply thermal paste (if not pre-applied).
   - Mount AIO pump or air heatsink. Tighten screws in a cross pattern for even pressure.

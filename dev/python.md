@@ -14,7 +14,7 @@
 | Dict Comprehension | `{k: v for k, v in zip(keys, values)}` |
 | Read File (Context Manager) | `with open('file.txt', 'r') as f:` |
 | Write JSON | `json.dump(data, f, indent=4)` |
-| Merge Dictionaries | `merged = dict1 | dict2` (Python 3.9+) |
+| Merge Dictionaries | `merged = dict1 \| dict2` (Python 3.9+) |
 | Type Hinting Function | `def greet(name: str) -> str:` |
 | Run Server | `python -m http.server 8000` |
 

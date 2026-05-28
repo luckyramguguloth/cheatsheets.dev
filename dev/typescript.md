@@ -10,7 +10,7 @@
 | Feature | Syntax |
 |---|---|
 | Interface Definition | `interface User { id: number; name: str }` |
-| Type Alias | `type ID = string | number;` |
+| Type Alias | `type ID = string \| number;` |
 | Generic Function | `function first<T>(arr: T[]): T` |
 | Readonly Properties | `interface Point { readonly x: number }` |
 | Optional Fields | `interface Config { port?: number }` |

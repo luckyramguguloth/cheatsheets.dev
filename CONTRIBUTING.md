@@ -112,7 +112,7 @@ These rules keep every cheatsheet consistent and trustworthy:
 
 ---
 
-## 🏷️ PR Title Format
+## 📌 PR Title Format
 
 Always use this exact format for PR titles:
 
