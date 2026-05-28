@@ -1002,7 +1002,7 @@
 
       btn.addEventListener('click', function () {
         const current = html.getAttribute('data-theme');
-        const next    = current === 'dark' ? 'light' : 'dark';
+        const next    = current === 'dark' ;
         html.setAttribute('data-theme', next);
         icon.textContent = next === 'dark' ? '☀️' : '🌙';
         localStorage.setItem('cs-theme', next);
