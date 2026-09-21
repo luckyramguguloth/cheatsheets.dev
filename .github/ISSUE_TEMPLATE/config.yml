@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/cheatsheets-dev/cheatsheets/discussions
+    about: Ask questions, share ideas, or discuss cheatsheets here.
+  - name: 📖 Contributing Guide
+    url: https://github.com/cheatsheets-dev/cheatsheets/blob/main/CONTRIBUTING.md
+    about: Read the contributing guide before opening an issue or pull request.
